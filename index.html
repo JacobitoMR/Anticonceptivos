@@ -313,4 +313,90 @@
                                     <label for="q5">5. ¿En qué año se inventó el condón de caucho vulcanizado?</label>
                                     <input type="text" id="q5" name="question5" required>
                                 </div>
-                                <div class="question"
+                                
+                                <!-- Sección de Conclusión -->
+            <section id="conclusion" class="section-content" data-section="10">
+                <div class="section-inner">
+                    <h1>Conclusión</h1>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <p>La historia de los anticonceptivos ha sido un viaje fascinante a través de siglos de evolución en la medicina, la tecnología y la sociedad. Desde los primeros intentos primitivos hasta los avances más recientes, esta cronología refleja la búsqueda constante de la humanidad por controlar su fertilidad y brindar a las personas opciones para planificar sus vidas.</p>
+                            <p>A medida que la ciencia y la investigación continúan avanzando, es emocionante pensar en los próximos capítulos de esta historia, donde los nuevos desarrollos y innovaciones podrían transformar aún más el panorama de la anticoncepción.</p>
+                            <p>Esperamos que este recorrido por la historia de los métodos anticonceptivos haya ampliado tu conocimiento y te haya inspirado a reflexionar sobre la importancia de la planificación familiar y el control reproductivo a lo largo del tiempo.</p>
+                        </div>
+                        <figure class="image-content">
+                            <img src="/api/placeholder/400/300" alt="Gente celebrando avances anticonceptivos" loading="lazy">
+                            <figcaption>Celebrando los avances en anticoncepción</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Agradecimientos -->
+            <section id="acknowledgments" class="section-content" data-section="11">
+                <div class="section-inner">
+                    <h1>Agradecimientos</h1>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <p>Queremos expresar nuestro agradecimiento a todas las personas e instituciones que han contribuido al avance de la investigación y el desarrollo de los métodos anticonceptivos a lo largo de la historia. Su dedicación y esfuerzo han hecho posible que hoy en día tengamos una amplia gama de opciones para el control de la natalidad y la planificación familiar.</p>
+                            <p>Gracias también a todos los usuarios que han explorado esta cronología y compartido sus conocimientos y perspectivas. Esperamos que esta información haya sido útil y que sigan interesados en seguir aprendiendo sobre este importante aspecto de la historia de la medicina y la salud reproductiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Recursos -->
+            <section id="resources" class="section-content" data-section="12">
+                <div class="section-inner">
+                    <h1>Recursos Adicionales</h1>
+                    <div class="content-grid">
+                        <div class="text-content">
+                            <p>Si deseas profundizar más en el tema, te recomendamos los siguientes recursos adicionales:</p>
+                            <ul>
+                                <li><a href="#">Libro: "Historia de los Métodos Anticonceptivos" por [Autor]</a></li>
+                                <li><a href="#">Artículo: "Desarrollo de la Anticoncepción en el Siglo XX" en [Revista]</a></li>
+                                <li><a href="#">Sitio web: "Centro de Investigación y Desarrollo de Anticonceptivos"</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Botón de Cierre -->
+            <div class="section-inner">
+                <button id="close-button" class="btn-primary" aria-label="Cerrar y salir">
+                    Salir
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Opción de Descarga -->
+    <div class="download-container">
+        <button id="download-button" class="btn-primary" aria-label="Descargar contenido">
+            Descargar Contenido
+        </button>
+        <a id="download-link" href="#" download="historia-anticonceptivos.html" hidden></a>
+    </div>
+
+    <script>
+        // Función para generar y descargar el contenido HTML
+        function downloadContent() {
+            // Obtener el contenido HTML de la página
+            const content = document.documentElement.outerHTML;
+
+            // Crear un objeto Blob con el contenido HTML
+            const blob = new Blob([content], { type: 'text/html' });
+
+            // Crear un enlace de descarga y simular un clic
+            const downloadLink = document.getElementById('download-link');
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.click();
+        }
+
+        // Evento de clic para descargar el contenido
+        document.getElementById('download-button').addEventListener('click', downloadContent);
+    </script>
+</body>
+                        </html>
+                    
