@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de los Anticonceptivos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Pantalla de Bienvenida Dinámica -->
+    <div id="welcome-screen" class="welcome-screen">
+        <div class="welcome-content">
+            <h1>Bienvenido a la Historia de los Anticonceptivos</h1>
+            <p>Explora cómo han evolucionado los métodos anticonceptivos a lo largo de los siglos</p>
+            <button id="enter-button">Comenzar el Viaje</button>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div id="main-content" class="main-content" style="display:none;">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#epoca-antigua">Época Antigua</a></li>
+                    <li><a href="#edad-media">Edad Media</a></li>
+                    <li><a href="#epoca-moderna">Época Moderna</a></li>
+                    <li><a href="#epoca-contemporanea">Época Contemporánea</a></li>
+                    <li><a href="#avances-tecnologicos">Avances Tecnológicos</a></li>
+                    <li><a href="#quiz">Cuestionario</a></li>
+                    <li><a href="#conclusion">Conclusión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="introduccion">
+                <h1>Introducción</h1>
+                <p>Desde la antigüedad hasta la era moderna, los métodos anticonceptivos han reflejado avances científicos y cambios sociales.</p>
+            </section>
+            <section id="epoca-antigua">
+                <h1>Época Antigua</h1>
+                <p>En civilizaciones como Egipto, Grecia y Roma se usaban técnicas rudimentarias para prevenir embarazos.</p>
+            </section>
+            <section id="edad-media">
+                <h1>Edad Media</h1>
+                <p>Durante la Edad Media, aunque la Iglesia desaprobaba la anticoncepción, algunas prácticas persistieron.</p>
+            </section>
+            <section id="epoca-moderna">
+                <h1>Época Moderna</h1>
+                <p>En los siglos XIX y XX, los métodos anticonceptivos evolucionaron rápidamente con la industrialización.</p>
+            </section>
+            <section id="epoca-contemporanea">
+                <h1>Época Contemporánea</h1>
+                <p>Hoy, los anticonceptivos están personalizados y mejorados, ofreciendo diversas opciones seguras y efectivas.</p>
+            </section>
+            <section id="avances-tecnologicos">
+                <h1>Avances Tecnológicos</h1>
+                <p>En la era actual, los avances en biotecnología han llevado a métodos anticonceptivos más accesibles y efectivos.</p>
+            </section>
+            <section id="quiz">
+                <h1>Prueba tu Conocimiento</h1>
+                <form id="quiz-form">
+                    <div class="question">
+                        <label>1. ¿En qué época comenzaron a usarse métodos anticonceptivos rudimentarios?</label>
+                        <input type="text" name="question1">
+                    </div>
+                    <div class="question">
+                        <label>2. ¿Cuál era la postura de la Iglesia respecto a la anticoncepción en la Edad Media?</label>
+                        <input type="text" name="question2">
+                    </div>
+                    <!-- More questions up to 15 -->
+                    <div class="question">
+                        <label>15. ¿Qué avances tecnológicos actuales han impactado en la anticoncepción moderna?</label>
+                        <input type="text" name="question15">
+                    </div>
+                    <button type="submit">Enviar Respuestas</button>
+                </form>
+                <div id="quiz-result"></div>
+            </section>
+            <section id="conclusion">
+                <h1>Conclusión</h1>
+                <p>La historia de los anticonceptivos refleja una evolución hacia métodos cada vez más seguros y personalizados.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Estilos de Fondo y Texto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.welcome-screen {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header nav a {
+    color: #ffffff;
+}
+
+header nav a:hover {
+    color: #cccccc;
+    transform: scale(1.1);
+}
+
+/* Colores de Secciones */
+#introduccion, #epoca-antigua, #edad-media, #epoca-moderna, #epoca-contemporanea, #avances-tecnologicos, #quiz, #conclusion {
+    background-color: #f9f9f9;
+    color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Estilos para el cuestionario */
+#quiz {
+    background-color: #e8f4f8;
+    color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#quiz h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#quiz .question {
+    margin-bottom: 10px;
+}
+
+#quiz .question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#quiz .question input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#quiz button[type="submit"] {
+    background-color: #0044cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0044cc;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+/* Botón "Volver arriba" */
+.boton-arriba {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+}
